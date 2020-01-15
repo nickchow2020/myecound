@@ -1,0 +1,364 @@
+/* **************************************** */
+/**************** Base Style ****************/
+/* **************************************** */
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:#4D4D4D;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style-type: none;
+}
+h1,h2,h1{
+  padding:0;
+  margin: 0;
+}
+body{
+  background-color: rgba(213,207,26,.6);
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+img{
+  width: 100%;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+
+/* **************************************** */
+/************** Container Style *************/
+/* **************************************** */
+.main-header,
+.main-footer{
+  text-align: center;
+}
+
+/* Sticky Footer */
+.main-content{
+  flex: 1;
+}
+
+/* font-style */
+.nav ul,
+.contack,
+.content-header,
+.skill-header,
+.footer-nav{
+    font-family: 'Alatsi', sans-serif;
+    color:#4D4D4D;
+}
+
+.introduction,
+footer p,
+.main-content p{
+  color:#4D4D4D;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.introduction,
+.footer-intro{
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+/* **************************************** */
+/**************** Header Style **************/
+/* **************************************** */
+.portfolio-name{
+  font-family: 'Archivo Black', sans-serif;
+  color:#483232;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+
+.nav a{
+  display: block;
+  background: #fff;
+  margin: .5rem 1rem;
+  padding: 1rem;
+  transition: background 0.3s ease-out;
+}
+
+.nav a:hover{
+  background: tomato;
+  color: white;
+}
+
+.stephen-avatar{
+  width: 60%;
+  margin: 2rem 1rem;
+  border-radius: 50%;
+  border: solid white 5px;
+  box-shadow: 1px 2px 10px 5px gray;
+}
+
+.introduction{
+  padding-bottom: 2rem;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* **************************************** */
+/**************** Main-Content Style **************/
+/* **************************************** */
+.main-content{
+  background-color: white;
+}
+
+figure{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.content-header,
+.skill-header{
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.img-title,
+.img-describe{
+  text-align: center;
+}
+
+.img-title{
+  font-family: 'Alatsi', sans-serif;
+  color:#4D4D4D;
+  font-size: 1rem;
+  display: block;
+  padding: 1rem;
+}
+
+.img-describe{
+  line-height: 1.4;
+  margin-top: 0;
+}
+/* **************************************** */
+/**************** Footer Style **************/
+/* **************************************** */
+.main-footer span{
+  font-weight: 900;
+  color: black;
+}
+
+.line{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  border:0;
+  background-color:rgba(173,169,169,.4);
+  height: 1px;
+}
+
+.footer-nav{
+  display: none;
+}
+
+.footer-name,
+.backtotop{
+  margin: 1rem 2rem;
+  font-family: 'Alatsi', sans-serif;
+}
+
+.footer-name{
+  float: left;
+}
+
+.backtotop{
+  float: right;
+}
+
+.backtotop a{
+  color: black;
+}
+
+.phone,
+.email{
+  margin: 1.5rem;
+}
+
+.contack-wrap{
+  padding: .5rem 0;
+}
+
+.contack{
+  padding: 2rem 0;
+}
+
+.footer-intro{
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+/* **************************************** */
+/**************** Media-Query Style *********/
+/* **************************************** */
+@media(min-width:768px){
+  /* Header Style */
+  .avatar-wrap{
+    width: 95%;
+    margin: auto;
+    padding: 3rem 1rem;
+  }
+  .nav li{
+    background: none;
+    display: inline-block;
+  }
+  .nav a{
+    width: 9rem;
+    border-radius: 20px;
+    box-shadow: 7px 8px 6px 3px gray;
+  }
+  .introduction{
+    float: left;
+    width: 50%;
+    text-align:left;
+    line-height: 1.5;
+  }
+  .image-avatar{
+    float: right;
+    width: 50%;
+  }
+  .stephen-avatar{
+    border:none;
+    width: 60%;
+    padding:0;
+    margin:0;
+  }
+  /*main-section style*/
+  figure:nth-child(odd){
+    float: right;
+    width: 45%;
+    margin-right: 2rem;
+  }
+
+  figure:nth-child(even){
+    float: left;
+    width: 45%;
+    margin-left: 2rem;
+  }
+
+  .skills figure:last-child{
+    float: none;
+    width: 45%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  /* footer style */
+  .backtotop{
+    display:none;
+  }
+  .footer-nav,
+  .footer-nav li{
+    display: inline-block;
+  }
+  .footer-nav{
+    float: right;
+  }
+  .footer-nav li{
+    margin-left: 1rem;
+  }
+  .footer-nav a{
+    padding: 0 1rem;
+    border-radius: 10px;
+    transition: background .5s ease-out;
+  }
+  .footer-nav a:hover{
+    display:block;
+    background: tomato;
+    color: white;
+  }
+  .footer-name{
+    margin: 0;
+  }
+  .footer-wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0 4.2rem 0;
+  }
+}
+
+@media(min-width:1024px){
+  .main-header,
+  .main-content,
+  .main-footer{
+    max-width: 1150px;
+    margin:auto;
+  }
+  .main-content{
+    padding-left: 1rem;
+  }
+  .main-footer{
+    font-size: 1.2rem;
+  }
+  /* Header Style */
+  .portfolio-name{
+    float: left;
+  }
+  .nav{
+    float: right;
+    margin-top: 1rem;
+  }
+
+  .header-wrap{
+    width: 92%;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  .nav li{
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .nav a{
+    width: 8rem;
+  }
+  .introduction{
+    font-size: 1.4rem;
+  }
+  .stephen-avatar{
+    width: 50%;
+    margin: auto;
+  }
+  /* Main Style */
+  .protfolio > figure,
+  .skills > figure,
+  .skills figure:last-child{
+    float: left;
+    width: 30%;
+    margin:1rem;
+  }
+  .line{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* **************************************** */
+/**************** Main-Content Style ********/
+/* **************************************** */
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
